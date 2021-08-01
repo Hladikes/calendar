@@ -71,7 +71,7 @@
 {/if}
 
 <button 
-  class="btn btn-flat btn-icon" 
+  class="btn btn-flat btn-icon mt-5" 
   on:click={ () => isAddEventPopupVisible = true }>
   <i class="material-icons-round">add</i>Add Event
 </button>

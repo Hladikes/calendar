@@ -38,8 +38,9 @@
   <div class="flex flex-col space-y-3 flex-1">
     <div class="flex flex-row items-center">
       <div 
+        class:border={ !color }
         style={ 'background-color: ' + color } 
-        class="w-6 h-6 rounded-full ml-2 mr-4 border border-cool-gray-300 dark:border-cool-gray-800"></div>
+        class="w-6 h-6 rounded-full ml-2 mr-4 border-cool-gray-300 dark:border-cool-gray-800"></div>
 
       <input 
         placeholder="Title" 
