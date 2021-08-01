@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  outline: 0px solid red;
+}
+
+:root {
+  --sat: env(safe-area-inset-top);
+  --sar: env(safe-area-inset-right);
+  --sab: env(safe-area-inset-bottom); /* THIS ONE GETS US THE HOME BAR HEIGHT */
+  --sal: env(safe-area-inset-left);
+}
+
+.btn {
+  @apply py-2 px-4 rounded-lg text-xl font-medium select-none transition focus:outline-none;
+}
+
+.btn:disabled {
+  @apply shadow-none text-opacity-50 cursor-not-allowed border-transparent;
+}
+
+.btn:disabled:hover {
+  @apply shadow-none;
+}
+
+.btn-flat {
+  @apply hover:bg-cool-gray-300 hover:bg-opacity-10 border border-cool-gray-500 border-opacity-30 text-cool-gray-700 dark:text-cool-gray-500;
+}
+
+.btn-icon {
+  @apply flex flex-row items-center gap-2 justify-center
+}
+
+
+.input {
+  @apply 
+    py-2 px-3 
+    font-medium
+    appearance-none 
+    bg-transparent 
+    border placeholder-cool-gray-400 border-cool-gray-300 dark:border-cool-gray-800 
+    rounded-lg 
+    focus:outline-none focus:border-blue-400;
+}
